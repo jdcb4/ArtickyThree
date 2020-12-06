@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Articky</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container" id="CtnStart" style="background: #0ad643;border-width: 5px;border-style: solid;">
+        <div class="row" style="border-width: 5px;border-style: solid;border-bottom-style: solid;">
+            <div class="col" id="btnStart"  onclick="fnInitiate()" style="background: #9c5778;border-width: 5px;border-bottom-style: none;">
+                <h1 style="text-align: center;border-bottom-style: none;">Start</h1>
+            </div>
+        </div>
+        <div class="row" style="border-bottom-style: solid;">
+            <div class="col" style="border-bottom-style: none;">
+                <h1 style="border-bottom-style: none;text-align: center;">Test</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="CtnGame" style="display:none">
+        <div class="row" style="border-width: 5px;border-style: solid;background: #ff0000;">
+            <div class="col">
+                <h1 id="lblCategory" style="text-align: center;">Category</h1>
+            </div>
+        </div>
+        <div class="row" style="border-width: 5px;border-style: solid;background: #0029ff;">
+            <div class="col">
+                <h1 id="lblWord" style="text-align: center;">Word</h1>
+            </div>
+        </div>
+        <div class="row" style="border-width: 5px;border-style: solid;border-bottom-width: 0px;height: 400px;">
+            <div class="col" id="btnSkip" style="background: #ffe500;text-align: center;" onclick="fnSkip()">
+                <h1>Skip</h1>
+                <p id="SkipList" style="text-align: center;">Paragraph</p>
+            </div>
+            <div class="col" id="btnNext" style="background: #14ff00;" onclick="fnNext()">
+                <h1 style="text-align: center;">Next</h1>
+                <p id="WordList" style="text-align: center;">Paragraph</p>
+            </div>
+        </div>
+        <div class="row" style="border-width: 5px;border-style: solid;">
+            <div class="col" style="background: #9c5778;border-width: 5px;">
+                <h1 id="lblTurnScore" style="text-align: center;">Turn Score: </h1>
+                <h1 id="lblTurnTimer" style="text-align: center;">Time remaining: </h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="container" id="CtnMenu" style="display:none">
+        <div class="row" style="border-width: 5px;border-style: solid;background: #ff0000;">
+            <div class="col">
+                <h1 style="text-align: center;">Choose a Category</h1>
+            </div>
+        </div>
+        <div class="row" style="border-width: 5px;border-style: solid;border-bottom-width: 0;border-bottom-style: solid;">
+            <div class="col" id="btnPeople" style="background: #ad4c4c;" onclick="fnPeople()">
+                <p style="text-align: center;">People</p>
+            </div>
+            <div class="col" id="btnNature" style="background: #ff9191;" onclick="fnNature()">
+                <p style="text-align: center;">Nature</p>
+            </div>
+        </div>
+        <div class="row" style="border-width: 5px;border-style: solid;border-top-width: 0px;border-bottom-width: 0px;">
+            <div class="col" id="btnObject" style="background: #346bac;" onclick="fnObject()">
+                <p style="text-align: center;">Object</p>
+            </div>
+            <div class="col" id="btnAction" style="background: #e8ec3a;" onclick="fnAction()">
+                <p style="text-align: center;">Action</p>
+            </div>
+        </div>
+        <div class="row" style="border-width: 5px;border-style: solid;border-top-width: 0px;border-bottom-width: 0px;">
+            <div class="col" id="btnRandom" style="background: #346bac;" onclick="fnRandom()">
+                <p style="text-align: center;">Random</p>
+            </div>
+            <div class="col" id="btnWorld" style="background: #e8ec3a;" onclick="fnWorld()">
+                <p style="text-align: center;">World</p>
+            </div>
+        </div>
+        <div class="row" style="border-width: 5px;border-style: solid;border-top-width: 0px;">
+            <div class="col" id="btnPickForMe" style="background: #798696;">
+                <p style="text-align: center;">Pick for me</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="CtnEnd" style="background: #0ad643;border-width: 5px;border-style: solid;display:none">
+        <div class="row">
+            <div class="col">
+                <h1>Test1</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="btnReset">
+                <h1>Reset<br></h1>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <script src="timer.js"></script>
+    <script src="shuffle.js"></script>
+    <script src="show.js"></script>
+    <script src="topics.js"></script>
+
+
+</body>
+
+</html>
